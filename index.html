@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spectrum Bingo</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+        }
         body {
             margin: 0;
             display: flex;
@@ -12,14 +20,27 @@
             align-items: center;
             height: 100vh;
             background-color: #fff;
+            display: flex;
+            flex-direction: column;
         }
-        img {
+        .logo-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo-container img {
             max-width: 100%;
-            height: auto;
+            max-height: 100%;
         }
     </style>
 </head>
 <body>
-    <img src="/logo.svg" alt="Logo">
+    <div class="logo-container">
+        <img src="/logo.svg" alt="Spectrum bingo">
+    </div>
+    <div class="logo-container">
+        <img src="/neurospicy-digital.svg" alt="Neuro spicey">
+    </div>
 </body>
 </html>
